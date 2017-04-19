@@ -1,0 +1,6 @@
+C:\Users\mange\OneDrive\Documents\GitHub\GeeksForGeeks\Tree\bin\Debug\BinaryTree.exe.config
+C:\Users\mange\OneDrive\Documents\GitHub\GeeksForGeeks\Tree\bin\Debug\BinaryTree.exe
+C:\Users\mange\OneDrive\Documents\GitHub\GeeksForGeeks\Tree\bin\Debug\BinaryTree.pdb
+C:\Users\mange\OneDrive\Documents\GitHub\GeeksForGeeks\Tree\obj\Debug\BinaryTree.csprojResolveAssemblyReference.cache
+C:\Users\mange\OneDrive\Documents\GitHub\GeeksForGeeks\Tree\obj\Debug\BinaryTree.exe
+C:\Users\mange\OneDrive\Documents\GitHub\GeeksForGeeks\Tree\obj\Debug\BinaryTree.pdb

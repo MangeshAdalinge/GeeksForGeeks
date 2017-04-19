@@ -1,0 +1,6 @@
+C:\Users\mange\OneDrive\Documents\GitHub\GeeksForGeeks\GeeksForGeeks\Heap\bin\Debug\Heap.exe.config
+C:\Users\mange\OneDrive\Documents\GitHub\GeeksForGeeks\GeeksForGeeks\Heap\bin\Debug\Heap.exe
+C:\Users\mange\OneDrive\Documents\GitHub\GeeksForGeeks\GeeksForGeeks\Heap\bin\Debug\Heap.pdb
+C:\Users\mange\OneDrive\Documents\GitHub\GeeksForGeeks\GeeksForGeeks\Heap\obj\Debug\Heap.csprojResolveAssemblyReference.cache
+C:\Users\mange\OneDrive\Documents\GitHub\GeeksForGeeks\GeeksForGeeks\Heap\obj\Debug\Heap.exe
+C:\Users\mange\OneDrive\Documents\GitHub\GeeksForGeeks\GeeksForGeeks\Heap\obj\Debug\Heap.pdb

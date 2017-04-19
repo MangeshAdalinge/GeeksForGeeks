@@ -16,6 +16,13 @@ namespace Heap
         {
             capacity = cap;
             array = new int[capacity];
+            if (hType == "MIN")
+            {
+                for (int i = 0; i < array.Length; i++)
+                {
+                    array[i] = int.MaxValue;
+                }
+            }
             count = 0;
             heapType = hType;
 
@@ -103,71 +110,79 @@ namespace Heap
             
         }
 
+       
+
         public void percolateDown(int parentIndex)
         {
             int leftIndex, rightIndex,index=0;
 
             leftIndex = leftChild(parentIndex);
             rightIndex = rightChild(parentIndex);
-
-            if (heapType == "MIN")
-            {
-                //if (leftIndex != -1 )
-                //    if(leftIndex >= array.Length || array[leftIndex] == 0)                    
-                //        leftIndex = -1;
-                //if (rightIndex != -1)
-                //    if (rightIndex >= array.Length || array[rightIndex] == 0)                    
-                //        rightIndex = -1;
-                if (leftIndex < array.Length && leftIndex != -1)
-                    if ((array[leftIndex] != 0 && array[parentIndex] == 0) || (array[leftIndex] < array[parentIndex]))
+            //if(parentIndex <= (count-1)/2)
+            //{
+                if (heapType == "MIN")
                 {
-                    index = leftIndex;
+                    //if (leftIndex != -1 )
+                    //    if(leftIndex >= array.Length || array[leftIndex] == 0)                    
+                    //        leftIndex = -1;
+                    //if (rightIndex != -1)
+                    //    if (rightIndex >= array.Length || array[rightIndex] == 0)                    
+                    //        rightIndex = -1;
+                    if (leftIndex < array.Length && leftIndex != -1)
+                        if ((array[leftIndex] != 0 && array[parentIndex] == 0) || (array[leftIndex] < array[parentIndex]))
+                        {
+                            index = leftIndex;
+                        }
+                        else
+                            index = parentIndex;
+
+                    if (rightIndex < array.Length)
+                        if (rightIndex != -1 && array[rightIndex] < array[parentIndex])
+                            index = rightIndex;
+
+                    if (index != parentIndex)
+                    {
+                        int temp = array[parentIndex];
+                        array[parentIndex] = array[index];
+                        array[index] = temp;
+                    }
+                    else //if(index < array.Length)
+                        index++;
+
+                    if (rightIndex != -1 && leftIndex != -1)
+                        percolateDown(index);
                 }
-                else 
-                    index = parentIndex;
-
-                if (rightIndex < array.Length)
-                if (rightIndex != -1 && array[rightIndex] < array[parentIndex])
-                    index = rightIndex;
-
-                if (index != parentIndex)
+                else if (heapType == "MAX")
                 {
-                    int temp = array[parentIndex];
-                    array[parentIndex] = array[index];
-                    array[index] = temp;
-                }
-                else //if(index < array.Length)
-                    index++;
 
-                if (rightIndex != -1 && leftIndex != -1)
-                    percolateDown(index);
-            }
-            else if (heapType == "MAX")
-            {
-                if (leftIndex < array.Length && leftIndex != -1)
-                    if ((array[leftIndex] != 0 && array[parentIndex] == 0) || (array[leftIndex] < array[parentIndex]))
-                {
-                    index = leftIndex;
-                }
-                else
-                    index = parentIndex;
-                if (rightIndex < array.Length)
-                if (rightIndex != -1 && array[rightIndex] > array[parentIndex])
-                    index = rightIndex;
-                
+                    if (leftIndex < array.Length && leftIndex != -1)
 
-                if (index != parentIndex)
-                {
-                    int temp = array[parentIndex];
-                    array[parentIndex] = array[index];
-                    array[index] = temp;
-                }
-                else
-                    index++;
+                        if ((array[leftIndex] != 0 && array[parentIndex] == 0) || (array[leftIndex] < array[parentIndex]))
+                        {
+                            index = leftIndex;
+                        }
 
-                if (rightIndex != -1 && leftIndex != -1)
-                    percolateDown(index);
-            }
+                        else
+                            index = parentIndex;
+                    if (rightIndex < array.Length)
+                        if (rightIndex != -1 && array[rightIndex] > array[parentIndex])
+                            index = rightIndex;
+
+
+                    if (index != parentIndex)
+                    {
+                        int temp = array[parentIndex];
+                        array[parentIndex] = array[index];
+                        array[index] = temp;
+                    }
+                    else
+                        index++;
+
+                    if (rightIndex != -1 && leftIndex != -1)
+                        percolateDown(index);
+                }
+           // }
+            
 
             
         }
@@ -211,11 +226,20 @@ namespace Heap
 
             int data = array[0];
             array[0] = array[array.Length - 1];
+            if (heapType == "MIN")
+            {
+                array[array.Length - 1] = int.MaxValue;
+            }
+            else
             array[array.Length - 1] = 0;
             count--;
             
            // array[capacity-1] = 0;
-            percolateDown(array[0]);
+            //for (int i = (array.Length - 1) / 2; i >= 0; i--)
+            //{
+            //    percolateDown(i);
+            //}
+            percolateDown(0);
             return data;
         }
     }

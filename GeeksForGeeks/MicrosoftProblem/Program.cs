@@ -190,6 +190,7 @@ namespace MicrosoftProblem
                 Console.WriteLine("3. Longest Palindromic Substring ( Linked List )");
                 Console.WriteLine("4. subArrayMaxSum");
                 Console.WriteLine("5. Count distinct elements in every window: Sliding Window");
+                Console.WriteLine("6. Word Boggle");
                 Console.WriteLine("0. Exit");
                 int ch = int.Parse(Console.ReadLine());
 
@@ -242,6 +243,16 @@ namespace MicrosoftProblem
 
                         break;
 
+                    case 6:
+                        Console.WriteLine("Word Boggle");
+                       // Console.WriteLine("Input String");
+                        string[] dictionary = { "GEEKS", "FOR", "QUIZ", "GO" };
+                       // Console.WriteLine("ENTER VALUE OF SLIDING WINDOW: ");
+                       // char[][] boggle = {'G','I','Z','U','E','K','Q','S','E'};
+                        inputArr = new int[] { 1, 2, 1, 3, 4, 2, 3 };
+                        countDistinctElementsInWindow(inputArr, k);
+
+                        break;
 
                     case 0:
                         Environment.Exit(0);

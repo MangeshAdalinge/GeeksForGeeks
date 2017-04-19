@@ -1,0 +1,6 @@
+C:\Users\mange\OneDrive\Documents\GitHub\GeeksForGeeks\AmazonProblems\bin\Debug\AmazonProblems.exe.config
+C:\Users\mange\OneDrive\Documents\GitHub\GeeksForGeeks\AmazonProblems\bin\Debug\AmazonProblems.exe
+C:\Users\mange\OneDrive\Documents\GitHub\GeeksForGeeks\AmazonProblems\bin\Debug\AmazonProblems.pdb
+C:\Users\mange\OneDrive\Documents\GitHub\GeeksForGeeks\AmazonProblems\obj\Debug\AmazonProblems.exe
+C:\Users\mange\OneDrive\Documents\GitHub\GeeksForGeeks\AmazonProblems\obj\Debug\AmazonProblems.pdb
+C:\Users\mange\OneDrive\Documents\GitHub\GeeksForGeeks\AmazonProblems\obj\Debug\AmazonProblems.csprojResolveAssemblyReference.cache
