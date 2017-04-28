@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2013
-VisualStudioVersion = 12.0.21005.1
+VisualStudioVersion = 12.0.40629.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LinkedList", "LinkedList.csproj", "{9C825508-112D-4ADD-8D7D-EDB627AFF565}"
 EndProject
@@ -20,6 +20,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Graph", "..\Graph\Graph.csproj", "{9E336001-599C-4B87-948B-CD221C5DD3F8}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CSharpConcepts", "CSharpConcepts\CSharpConcepts.csproj", "{760F5F7A-6C9F-43DF-BAF2-74C4210DAB3F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LINQ", "..\LINQ\LINQ.csproj", "{0D261CED-BC76-4A4F-B855-851B45BF1A5D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -63,6 +65,10 @@ Global
 		{760F5F7A-6C9F-43DF-BAF2-74C4210DAB3F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{760F5F7A-6C9F-43DF-BAF2-74C4210DAB3F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{760F5F7A-6C9F-43DF-BAF2-74C4210DAB3F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0D261CED-BC76-4A4F-B855-851B45BF1A5D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0D261CED-BC76-4A4F-B855-851B45BF1A5D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0D261CED-BC76-4A4F-B855-851B45BF1A5D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0D261CED-BC76-4A4F-B855-851B45BF1A5D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
