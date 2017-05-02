@@ -245,7 +245,7 @@ namespace AmazonProblems
                 Console.WriteLine("4. Rotated String");
                 Console.WriteLine("5. Smallest subarray with sum greater than x");
                 Console.WriteLine("6. Largest subarray with sum less than x");
-                //Console.WriteLine("4. ");
+                Console.WriteLine("5. Longest Increasing Subsequence Size (N log N)");
                 Console.WriteLine("0. Exit");
                 Console.WriteLine("Select question: ");
 
